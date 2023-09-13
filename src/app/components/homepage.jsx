@@ -1,10 +1,14 @@
-import sectionOneBg from  '.public/section-one-bg.jpg'
 
 const Homepage = () => {
     return (
         <div className="homepage">
         <div className="section-one">
-            <img src={sectionOneBg} alt="section one background" />
+            <img
+                src="/sectionOneBg.png"
+                alt="section one background"
+                className="section-one-bg"
+            />
+                
             <div className="section-one-content">
             <h1>Section One</h1>
             <p>Section one content</p>
