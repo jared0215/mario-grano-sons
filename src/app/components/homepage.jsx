@@ -17,7 +17,10 @@ const Homepage = () => {
                     is a 2nd generation family business providing
                     quality masonry work since 1963.
                 </h1>
-                <Button text="Learn More" link="/about" />
+                <div className="flex justify-center">
+                    <Button text="Our History" link="/about" />
+                    <Button text="Contact" link="/contact" />
+                </div>
             </div>
 
         </section>
