@@ -1,24 +1,28 @@
+import Navbar from "./navbar"
+import Button from "./reusable/buttons"
+
 
 const Homepage = () => {
     return (
-        <div className="homepage">
-        <div className="section-one">
-            <img
-                src="/sectionOneBg.png"
-                alt="section one background"
-                className="section-one-bg"
-            />
-                
-            <div className="section-one-content">
-            <h1>Section One</h1>
-            <p>Section one content</p>
+    <div className="bg-main-bg h-screen pt-5">
+
+        <Navbar />
+
+        <section className="text-white body-font">
+
+            <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+
+                <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+                    Mario Grano & Sons, 
+                    is a 2nd generation family business providing
+                    quality masonry work since 1963.
+                </h1>
+                <Button text="Learn More" link="/about" />
             </div>
-        </div>
-        <div className="section-two">
-            <h1>Section Two</h1>
-            <p>Section two content</p>
-        </div>
-        </div>
+
+        </section>
+
+    </div>
     )
 }
 
